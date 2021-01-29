@@ -24,8 +24,41 @@ p {
   color:rgb(157, 211, 133);
   font-family:'Courier New', Courier, monospace;
   padding: 35px;
+  
 }
 
-.submit {
-  padding:35px;
+.Output {
+  color:#e4dcdc;
+  padDing: 20px;
+  
 }
+
+.button {
+  padding: 30px;
+}
+
+ul {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+  @keyframes example {
+    0%   {color:red; left:0px; top:0px;}
+    20%  {color:yellow; left:700px; top:0px;}
+    40%  {color:blue; left:1000px; top:0px;}
+    60%  {color:green; left:1000px; top:250px;}
+    80%  {color:red; left:0px; top:250px;}
+    100%  {color:rgb(166, 23, 255); left:0px; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+  .magic {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    animation-name: example;
+    animation-duration: 4s;
+    border:solid;
+    text-align:center;
+    padding:10px
+  }
