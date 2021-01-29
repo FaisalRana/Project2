@@ -9,7 +9,15 @@ h1 {
   padding-bottom: 5px;
   text-decoration: underline;
   font-family:'Courier New', Courier, monospace
-  
+}
+
+img {
+  border-radius:20px;
+  max-width: 15%;
+  height: auto;
+  margin-right:100px;
+  margin-left:auto;
+  float:right;
 }
 
 p {
@@ -24,7 +32,7 @@ p {
   color:rgb(157, 211, 133);
   font-family:'Courier New', Courier, monospace;
   padding: 35px;
-  
+
 }
 
 .Output {
@@ -42,12 +50,12 @@ ul {
 }
 
   @keyframes example {
-    0%   {color:red; left:0px; top:0px;}
-    20%  {color:yellow; left:700px; top:0px;}
-    40%  {color:blue; left:1000px; top:0px;}
-    60%  {color:green; left:1000px; top:250px;}
-    80%  {color:red; left:0px; top:250px;}
-    100%  {color:rgb(166, 23, 255); left:0px; top:0px;}
+    0%   {color:red; left:0px; bottom:0px;}
+    20%  {color:yellow; left:700px; bottom:500px;}
+    40%  {color:blue; left:700px; bottom:0px;}
+    60%  {color:green; left:0px; bottom:500px;}
+    80%  {color:red; left:700px; bottom:500px;}
+    100%  {color:rgb(166, 23, 255); left:0px; bottom:0px;}
   }
   
   /* The element to apply the animation to */
@@ -57,7 +65,7 @@ ul {
     position: relative;
     background-color: rgb(0, 0, 0);
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 2s;
     border:solid;
     text-align:center;
     padding:10px
