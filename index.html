@@ -13,88 +13,70 @@
   <div class=container>
     <div class=jumbotron>
       <h1>Welcome to the magic language matcher!</h1>
-      <p>Please answer the following questions to reveal your future.</p>
-  
-    <form>
+      <p id="rainbowcolor">Please answer the following questions to reveal your future.</p>
+    </div>
+    <form id="formOne">
       <div class="form-group">
-        <label for="question1">Which do you like better?</label>
+        <label for="question1">Do you like Iphones?</label>
         <select class="form-control" id="question1">
-        <option>Math</option>
-        <option>Art</option>
+        <option value="1">Love it</option>
+        <option value="2">Hate it</option>
         </select>
-          <label for="question2">Do you like osx?:</label>
-          <select class="form-control" id="question2">
-            <option>Love it</option>
-            <option>Hate it</option>
-            <option>Meh</option>
-          </select>
-          <label for="question3">Do you like windows?</label>
-          <select class="form-control" id="question3">
-            <option>Love it</option>
-            <option>Hate it</option>
-            <option>Meh</option>
-          </select>
-          <label for="question4">Do you like android?</label>
-          <select class="form-control" id="question4">
-            <option>Love it</option>
-            <option>Hate it</option>
-            <option>Meh</option>
-          </select>
-          <label for="question5">Do you want to work on AI/Machine Learning?</label>
-          <select class="form-control" id="question5">
-            <option>Love it</option>
-            <option>Hate it</option>
-            <option>Meh</option>
-          </select>
-        </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+        <label for="question2">Do you like Mac OS?:</label>
+        <select class="form-control" id="question2">
+        <option value="1">Love it</option>
+        <option value="2">Hate it</option>
+        </select>
+        <label for="question3">Do you like Windows?</label>
+        <select class="form-control" id="question3">
+        <option value="1">Love it</option>
+        <option value="2">Hate it</option>
+        </select>
+        <label for="question4">Do you like Android?</label>
+        <select class="form-control" id="question4">
+        <option value="1">Love it</option>
+        <option value="2">Hate it</option>
+        </select>
+        <label for="question5">Do you want to work on AI/Machine Learning?</label>
+        <select class="form-control" id="question5">
+        <option value="1">Love it</option>
+        <option value="2">Hate it</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-
-  <img src="images/wizard1.jpg" alt="wizard">
-  <div class=Output>
-    <p class=magic>The magic language matcher has spoken!</p>
-    <div class="row">
-      <div class="col-sm">
-        <ul>
-          <li>HTML and CSS</li>
-          <li>Objective C</li>
-          <li>Applescript</li>
-          <li>C</li>
-          <li>Kotlin</li>
-        </ul>
-      </div>
-      <div class="col-sm">
-        <ul>  
-          <li>Javacript</li>
-          <li>Swift</li>
-          <li>C++</li>
-          <li>C#</li>
-          <li>Rust</li>
-        </ul>
-      </div>
-      <div class="col-sm">
-        <ul>
-          <li>LISP</li>
-          <li>R</li>
-          <li>SQL</li>
-          <li>Scala</li>
-        </ul>
+    <div id=hiddenoutput>
+      <p id=magic>The magic language matcher has spoken!</p>
+      <div class="row">
+        <div class="col-sm">
+          <ul>
+            <li id="html">HTML and CSS</li>
+            <li id="objc"></li>Objective C</li>
+            <li id="applescript"></li>>Applescript</li>
+            <li id="c"></li>>C</li>
+            <li id="kotlin"></li>>Kotlin</li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <ul>  
+            <li id="javascript"></li>>Javacript</li>
+            <li id="swift"></li>>Swift</li>
+            <li id="C++"></li>>C++</li>
+            <li id="C#"></li>>C#</li>
+            <li id="Rust"></li>>Rust</li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <ul>
+            <li id="lisp"></li>>LISP</li>
+            <li id="r"></li>>R</li>
+            <li id="sql"></li>>SQL</li>
+            <li id="scala"></li>>Scala</li>
+            <li id="gibberish"></li>>Gibberish</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-
-
-
-  //Who would you rather be?
-  1. Bill Gates
-  2. Karate Kid
-  3. Tony Hawk
-  
-
-
- 
-
   </div>
 </body>
 </html>

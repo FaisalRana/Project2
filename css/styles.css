@@ -35,9 +35,10 @@ p {
 
 }
 
-.Output {
+#hiddenoutput {
   color:#e4dcdc;
   padDing: 20px;
+  display:none;
   
 }
 
@@ -47,9 +48,10 @@ p {
 
 ul {
   font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
 }
 
-  @keyframes example {
+  @keyframes magicresult {
     0%   {color:red; left:0px; bottom:0px;}
     20%  {color:yellow; left:700px; bottom:500px;}
     40%  {color:blue; left:700px; bottom:0px;}
@@ -59,14 +61,21 @@ ul {
   }
   
   /* The element to apply the animation to */
-  .magic {
+  #magic {
+    margin-top: 20px;
     width: 300px;
     height: 100px;
     position: relative;
     background-color: rgb(0, 0, 0);
-    animation-name: example;
+    animation-name: magicresult;
     animation-duration: 2s;
-    border:solid;
+    border:dotted;
+    border-radius:10px
     text-align:center;
-    padding:10px
+    padding:15px
   }
+
+  #rainbowcolor:hover {
+    animation-name: magicresult;
+    animation-duration:3s;
+  } 
