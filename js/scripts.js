@@ -34,8 +34,6 @@ $(document).ready(function() {
       $("#lisp").css("color","yellow");
       $("#prolog").css("color","yellow");
     }
-    
-
     $("#hiddenoutput").show();
     event.preventDefault();
   });
